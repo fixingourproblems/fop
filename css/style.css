@@ -6,6 +6,11 @@
     list-style: none;
     font-family: "Montserrat";
 }
+body {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
 .login-signup img {
     width: 30px;
     display: absolute;
@@ -25,6 +30,7 @@
 }
 header {
     height: 70px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,9 +43,9 @@ header .header-left {
     align-items: center;
 }
 .logo img {
-    width: 25%;
+    width: 40px;
     padding-top: 10px;
-    margin-left: 70px;
+    margin-left: 120px;
 }
 header .header-left nav {
     margin-left: 420px;
@@ -81,19 +87,23 @@ header .header-right .hamburger div {
     margin: 6px 0;
     background: #fff;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1290px) {
     body {
-        width: 1024px;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
     }
     .logo img {
-        width: 8%;
+        width: 40px;
         padding-top: 0px;
-        margin-left: 400px;
+        margin: auto;
+        display: flex;
     }
     header {
-        width: 1024px;
+        width: 100%;
         padding: 0 20px;
         display: flex;
+        overflow: hidden;
     }
     header .header-right .hamburger {
         display: block;
@@ -113,21 +123,25 @@ header .header-right .hamburger div {
     }
     header .header-left nav.active {
         top: 70px;
-        width: 1024px;
+        width: 100%;
     }
     header .header-left nav ul {
         display: block;
     }
+    header .header-left nav li {
+        height: 40px;
+    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 200px) {
     body {
-        width: 430px;
+        width: 100%;
+        display: flex;
         overflow: hidden;
     }
     header {
         padding: 0 20px;
-        width: 430px;
+        width: 100%;
         display: flex;
         overflow: hidden;
     }
@@ -155,7 +169,7 @@ header .header-right .hamburger div {
     }
     header .header-left nav.active {
         top: 70px;
-        width: 430px;
+        width: 100%;
     }
     header .header-left nav ul {
         display: block;
