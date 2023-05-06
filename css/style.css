@@ -95,7 +95,7 @@ header .header-right .hamburger div {
     margin: 6px 0;
     background: #fff;
 }
-@media (max-width: 1292px) {
+@media (max-width: 1290px) {
     body {
         width: 100%;
         display: flex;
