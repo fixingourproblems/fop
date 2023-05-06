@@ -1,3 +1,4 @@
+/* Base */
 * {
     padding: 0;
     margin: 0;
@@ -5,195 +6,356 @@
     text-decoration: none;
     list-style: none;
     font-family: "Montserrat";
+    box-sizing: border-box;
 }
 body {
+  line-height: 1.7;
+  color: #000000;
+  font-weight: 300;
+  font-size: 16px;
+  width: 100%;
+  height: 3000px;
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+ }
+
+  .login-signup img {
+      width: 30px;
+      display: absolute;
+      margin-right: 0px;
+  }
+  .login-signup a .count{
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-right: -15px;
+      margin-top: -20px;
+      font-size: 13px;
+      width: 24px;
+      height: 24px;
+  
+  
+  }
+  header {
+      height: 70px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      z-index: 2;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 50px;
+      background: #111111;
+      overflow:visible;
+  }
+  header .header-left {
+      display: flex;
+      align-items: center;
+      margin: auto;
+  }
+  .logo img {
+      width: 50px;
+      padding-top: 5px;
+      margin: auto;
+      margin-left: 200px;
+      margin-right: -40px;
+      display: flex;
+      align-items: left;
+  }
+  header .header-left nav {
+      margin-left: 400px;
+      margin-right: 250px;
+  }
+  header .header-left nav ul {
+      display: flex;
+      margin-left: 0px;
+      margin-right: -40px;
+  }
+  nav ul li a {
+      display: block;
+      color: #cfd9e0;
+      font-size: 18px;
+      padding: 5px 10px;
+      transition: 0.2s;
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+      color: #fff;
+  }
+  nav .login-signup {
+      display: none;
+  }
+  header .header-right {
+      display: flex;
+      align-items: center;
+  }
+  header .login-signup {
+      color: #cfd9e0;
+      font-weight: bold;
+  }
+  header .header-right .hamburger {
+      margin-left: 0px;
+      cursor: pointer;
+      display: none;
+  }
+  header .header-right .hamburger div {
+      width: 30px;
+      height: 2px;
+      margin: 6px 0;
+      background: #fff;
+  }
+  @media (max-width: 1290px) {
+      .logo img {
+          width: 40px;
+          padding-top: 0px;
+          margin: auto;
+          display: flex;
+      }
+      header {
+          width: 100%;
+          padding: 0 20px;
+          display: flex;
+          overflow: hidden;
+      }
+      header .header-right .hamburger {
+          display: block;
+      }
+      header .header-left nav {
+          margin: 0;
+          position: absolute;
+          top: -100%;
+          left: 0;
+          width: 100%;
+          height: fit-content;
+          background-color: #202020;
+          padding: 30px;
+          transition: 0.3s;
+          text-align: center;
+          z-index: -1;
+      }
+      header .header-left nav.active {
+          top: 70px;
+          width: 100%;
+          margin-top: 30px;
+      }
+      header .header-left nav ul {
+          display: block;
+          width: 100%;
+      }
+      header .header-left nav li {
+          height: 40px;
+      }
+  }
+  
+  @media (max-width: 200px) {
+      body {
+          width: 100%;
+          display: flex;
+          overflow: hidden;
+      }
+      header {
+          padding: 0 20px;
+          width: 100%;
+          display: flex;
+          overflow: hidden;
+      }
+      .logo img {
+          width: 25%;
+          padding-top: 40px;
+          margin-left: 70px;
+      }
+      header .header-right .hamburger {
+          display: absolute;
+          margin-right: 30px;
+      }
+      header .header-left nav {
+          margin: 0;
+          position: absolute;
+          top: -100%;
+          left: 0;
+          width: 100%;
+          height: fit-content;
+          background-color: #202020;
+          padding: 30px;
+          transition: 0.3s;
+          text-align: center;
+          z-index: -1;
+      }
+      header .header-left nav.active {
+          top: 70px;
+          width: 100%;
+      }
+      header .header-left nav ul {
+          display: block;
+      }
+      header .header-left .logo {
+          height: 100px;
+          margin-left: 30px;
+      }
+  }
+  @media (max-width: 500px) {
+      nav .login-signup {
+          display: block;
+          margin-top: 20px;
+      }
+      header .header-right .login-signup {
+          display: none;
+      }
+  }
+
+  /*information*/
+  .information
+  {
     width: 100%;
+    height: 30px;
+    background-color: #3d3d3d;
+    align-items: center;
     display: flex;
+    font-size: 12px;
+    color: #ffffff;
+    justify-content: center;
+  }
+/*img-slider*/
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to { 
+        transform: translateX(-100%);
+    }
+}
+
+.pb-2{
     overflow: hidden;
-    background-color: #424242;
+    white-space: nowrap;
+    position: relative;
+    margin-left: -200px;
 }
-.login-signup img {
-    width: 30px;
-    display: absolute;
-    margin-right: 0px;
+.pb-2:hover .logos-slide{ 
+    animation-play-state: paused;
 }
-.login-signup a .count{
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: -15px;
-    margin-top: -20px;
-    font-size: 13px;
-    width: 24px;
-    height: 24px;
-
-
+.pb-2:before,
+.pb-2:after {
+ position: absolute;
+ top: 0;
+ width: 100px;
+ height: 100%;
+ content: "";
+ z-index: 2;
 }
-header {
-    height: 70px;
-    width: 100%;
+.pb-2:before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
+}
+.logos-slide
+{
+    
     display: flex;
+    justify-content: center;
+    align-items:center;
+    animation: 35s slide infinite linear;
+}
+.logos-slide img
+{
+    height: 500px;
+}
+  /*container*/
+  .container
+  {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .pb-1
+  {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    color: #111111;
+    font-size: 32px;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 0 25px;
+  }
+  .pb-1 h1{
+    font-weight: 700;
+    font-size: 54px;
+    width: 500px;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .pb-1 p {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-left: 20px;
+width: 500px;
+  }
+  .pb-1 button {
+    margin-top: 35px;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff6e55, #ff7842,#ffe555);
+    box-shadow: 5px 5px 10px #1212126c;
+    color: #ffffff;
+  }
+  .pb-1 button:hover{
+    margin-top: 35px;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .pb-2
+  {
+    width: 100%;
+    height: 500px;
+    background-color: #c2382e;
+    display: flex;
+  }
+  @media (max-width:430px)
+  {
+  .container
+  {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
-    background: #111111;
-    overflow: hidden;
-}
-header .header-left {
+    box-sizing: border-box;
+  }
+  .pb-1
+  {
+    width: 100%;
+    height: 300px;
+    background-color: #6fa9ff;
     display: flex;
-    align-items: center;
-    margin: auto;
-}
-.logo img {
-    width: 50px;
-    padding-top: 5px;
-    margin: auto;
-    margin-left: 200px;
-    margin-right: -40px;
+  }
+  .pb-2
+  {
+    width: 100%;
+    height: 300px;
+    background-color: #2e69c2;
     display: flex;
-    align-items: left;
-}
-header .header-left nav {
-    margin-left: 400px;
-    margin-right: 250px;
-}
-header .header-left nav ul {
-    display: flex;
-    margin-left: 0px;
-    margin-right: -40px;
-}
-nav ul li a {
-    display: block;
-    color: #cfd9e0;
-    font-size: 18px;
-    padding: 5px 10px;
-    transition: 0.2s;
-}
-nav ul li a:hover,
-nav ul li a.active {
-    color: #fff;
-}
-nav .login-signup {
-    display: none;
-}
-header .header-right {
-    display: flex;
-    align-items: center;
-}
-header .login-signup {
-    color: #cfd9e0;
-    font-weight: bold;
-}
-header .header-right .hamburger {
-    margin-left: 0px;
-    cursor: pointer;
-    display: none;
-}
-header .header-right .hamburger div {
-    width: 30px;
-    height: 2px;
-    margin: 6px 0;
-    background: #fff;
-}
-@media (max-width: 1290px) {
-    body {
-        width: 100%;
-        display: flex;
-        overflow: hidden;
-    }
-    .logo img {
-        width: 40px;
-        padding-top: 0px;
-        margin: auto;
-        display: flex;
-    }
-    header {
-        width: 100%;
-        padding: 0 20px;
-        display: flex;
-        overflow: hidden;
-    }
-    header .header-right .hamburger {
-        display: block;
-    }
-    header .header-left nav {
-        margin: 0;
-        position: absolute;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: fit-content;
-        background-color: #202020;
-        padding: 30px;
-        transition: 0.3s;
-        text-align: center;
-        z-index: -1;
-    }
-    header .header-left nav.active {
-        top: 70px;
-        width: 100%;
-    }
-    header .header-left nav ul {
-        display: block;
-        width: 100%;
-    }
-    header .header-left nav li {
-        height: 40px;
-    }
-}
-
-@media (max-width: 200px) {
-    body {
-        width: 100%;
-        display: flex;
-        overflow: hidden;
-    }
-    header {
-        padding: 0 20px;
-        width: 100%;
-        display: flex;
-        overflow: hidden;
-    }
-    .logo img {
-        width: 25%;
-        padding-top: 40px;
-        margin-left: 70px;
-    }
-    header .header-right .hamburger {
-        display: absolute;
-        margin-right: 30px;
-    }
-    header .header-left nav {
-        margin: 0;
-        position: absolute;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: fit-content;
-        background-color: #202020;
-        padding: 30px;
-        transition: 0.3s;
-        text-align: center;
-        z-index: -1;
-    }
-    header .header-left nav.active {
-        top: 70px;
-        width: 100%;
-    }
-    header .header-left nav ul {
-        display: block;
-    }
-    header .header-left .logo {
-        height: 100px;
-        margin-left: 30px;
-    }
-}
-@media (max-width: 500px) {
-    nav .login-signup {
-        display: block;
-        margin-top: 20px;
-    }
-    header .header-right .login-signup {
-        display: none;
-    }
+  }
 }

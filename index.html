@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar using HTML, CSS and Javascript</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,700;0:800;1,200;1,400;1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <div class="information">Back To School special Offers | Get it Now</div>
     <header>
         <div class="login-signup">
-            <a href=""><img src="img/shopping-cart.svg">
+            <a href="checkout.html"><img src="img/shopping-cart.svg">
                 <span class="count">2</span>
             </a>
         </div>
@@ -43,11 +48,32 @@
             </div>
         </div>
     </header>
+
+    <div class="container">
+        <div class="pb-1">
+            <h1>Rak Sabun Kamar Mandi</h1>
+            <p>try Rak Sabun today for an easy and stress-free cleaning experience</p>
+            <button>
+                Shop Now &#10230
+            </button>
+            </div>
+        <div class="pb-2">
+            <div class="logos">
+                <div class="logos-slide">
+                    <img src="img/rak sabun.jpg">
+                    <img src="img/rak sabun1.jpeg">
+                    <img src="img/rak sabun2.jpg">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         hamburger = document.querySelector(".hamburger");
         nav = document.querySelector("nav");
         hamburger.onclick = function() {
-            nav.classList.toggle("active");
+         nav.classList.toggle("active");
         }
     </script>
 </body>
