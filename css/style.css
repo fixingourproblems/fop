@@ -10,11 +10,12 @@ body {
     width: 100%;
     display: flex;
     overflow: hidden;
+    background-color: #424242;
 }
 .login-signup img {
     width: 30px;
     display: absolute;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 .login-signup a .count{
     position: absolute;
@@ -41,18 +42,25 @@ header {
 header .header-left {
     display: flex;
     align-items: center;
+    margin: auto;
 }
 .logo img {
-    width: 40px;
-    padding-top: 10px;
-    margin-left: 120px;
+    width: 50px;
+    padding-top: 5px;
+    margin: auto;
+    margin-left: 200px;
+    margin-right: -40px;
+    display: flex;
+    align-items: left;
 }
 header .header-left nav {
-    margin-left: 420px;
+    margin-left: 400px;
     margin-right: 250px;
 }
 header .header-left nav ul {
     display: flex;
+    margin-left: 0px;
+    margin-right: -40px;
 }
 nav ul li a {
     display: block;
@@ -127,6 +135,7 @@ header .header-right .hamburger div {
     }
     header .header-left nav ul {
         display: block;
+        width: 100%;
     }
     header .header-left nav li {
         height: 40px;
