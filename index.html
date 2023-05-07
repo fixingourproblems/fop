@@ -54,20 +54,54 @@
             <h1>Rak Sabun Kamar Mandi</h1>
             <p>try Rak Sabun today for an easy and stress-free cleaning experience</p>
             <button>
-                Shop Now &#10230
+                Shop Now
             </button>
             </div>
         <div class="pb-2">
-            <div class="logos">
                 <div class="logos-slide">
                     <img src="img/rak sabun.jpg">
                     <img src="img/rak sabun1.jpeg">
                     <img src="img/rak sabun2.jpg">
-
                 </div>
-            </div>
         </div>
     </div>
+
+<!---rating customer-->
+
+    <div class="rating">
+        <h1>What they say about us</h1>
+        <p>let's see how satisfy our customer are</p>
+        <div class="star-rating">
+            
+        </div>
+    </div>
+<!---about procuct-->
+    <div class="about-product">
+        <div class="ap1">
+            <img src="img/rak sabun2.jpg">
+        </div>
+        <div class="ap2">
+            <h1>High Quality Sabun</h1>
+            <p>fawefaafawef awefjaiowef awejfia afiwefoaif aiwefjioaef awhfiua ahfuaowfhaoewf ahwfiaio awehfif hfawf hf
+                aefa jefiaoef eif efj aeifo byauiwef hfuewaf iuewf auf ahfaue fa ewufa efga uef ahfuewi 
+            </p>
+        </div>
+    </div>
+<!--guarante-->
+<div class="guarante">
+    <div class="g1">
+money back guarantee
+    </div>
+    <div class="g2">
+Fast delivery
+    </div>
+    <div class="g3">
+high quality product
+    </div>
+</div>
+
+
+
 
     <script>
         hamburger = document.querySelector(".hamburger");
@@ -75,6 +109,9 @@
         hamburger.onclick = function() {
          nav.classList.toggle("active");
         }
+
+        var copy = document.querySelector(".logos-slide").cloneNode(true)
+        document.querySelector(".pb-2").appendChild(copy)
     </script>
 </body>
 </html>
