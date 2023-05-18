@@ -233,7 +233,7 @@ body {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    margin-left: -200px;
+    margin-left: -100px;
 }
 .pb-2:hover .logos-slide{ 
     animation-play-state: paused;
@@ -242,7 +242,7 @@ body {
 .pb-2:after {
  position: absolute;
  top: 0;
- width: 160px;
+ width: 300px;
  height: 100%;
  content: "";
  z-index: 2;
@@ -279,7 +279,7 @@ body {
     justify-content: center;
     align-items:center;
     animation: 35s slide infinite linear;
-    width: 160%;
+    width: 140%;
 }
 .pb-2:before,
 .pb-2:after {
@@ -332,22 +332,33 @@ body {
   }
   .pb-1 h1{
     font-weight: 700;
-    font-size: 64px;
-    width: 500px;
+    font-size: 48px;
+    width: 600px;
     line-height: 1;
     margin-bottom: 20px;
+    margin-top: 20px;
     margin-left: 20px;
     z-index: 4;
   }
-  .pb-1 p {
-    font-size: 24px;
+  #p-bawah {
+    font-size: 16px;
     line-height: 1.2;
-    margin-left: 20px;
+    margin-left: 24px;
     z-index: 4;
     width: 500px;
+    text-align: left;
+  }
+  #p-atas{  
+    font-size: 18px;
+    line-height: 1.2;
+    margin-left: 24px;
+    margin-top: 10px;
+    z-index: 4;
+    width: 400px;
+    text-align: left;  
   }
   .pb-1 button {
-    margin-top: 35px;
+    margin-top: 55px;
     margin-left: 20px;
     font-size: 16px;
     font-weight: 500;
@@ -359,7 +370,7 @@ body {
     color: #ffffff;
   }
   .pb-1 button:hover{
-    margin-top: 35px;
+    margin-top: 55px;
     width: 160px;
     height: 50px;
     font-size: 16px;
@@ -392,8 +403,8 @@ body {
   .pb-1
   {
     width: 100%;        
-    height: 420px;
-    background-color: #ffffff00;
+    height: 520px;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,17 +416,27 @@ body {
     width: 100%;
     line-height: 1;
     margin-bottom: 20px;
+    margin-top: 30px;
     margin-left: 0px;
    text-align: center;
     z-index: 4;
   }
-  .pb-1 p {
-    font-size: 18px;
+  #p-bawah {
+    font-size: 16px;
     line-height: 1.2;
     margin-left: 0px;
     z-index: 4;
-    width: 100%;
+    width: 350px;
     text-align: center;
+  }
+  #p-atas{  
+    font-size: 18px;
+    line-height: 1.2;
+    margin-left: 0px;
+    margin-top: 10px;
+    z-index: 4;
+    width: 300px;
+    text-align: center;  
   }
   .pb-2
   {
@@ -424,12 +445,12 @@ body {
     background-color: #2e69c2;
     display: flex;
     margin-left: 0px;
-    margin-top: -100px;
+    margin-top: 0px;
   }
   .pb-1 button {
     justify-content: center;
     align-items: center;
-    margin-top: 55px;
+    margin-top: 15px;
     margin-left: 0px;
     font-size: 16px;
     font-weight: 500;
@@ -441,7 +462,7 @@ body {
     color: #ffffff;
   }
   .pb-1 button:hover{
-    margin-top: 55px;
+    margin-top: 15px;
     width: 160px;
     height: 50px;
     font-size: 16px;
