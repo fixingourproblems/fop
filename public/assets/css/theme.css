@@ -5772,6 +5772,15 @@ fieldset:disabled .btn {
   margin-bottom: 20px;
 }
 }
+/*w-rt*/
+.w-rt{
+  width: 220px;
+}
+@media (max-width:415px){
+  .w-rt{
+    width: 300px;
+  }
+}
 /*container-detail*/
 .container-detail
 {
@@ -5789,7 +5798,7 @@ fieldset:disabled .btn {
      height: 500px;
     background-color: #fdfdfd;
     align-items: center;
-    margin: 0px auto 80px auto;
+    margin: 50px auto 80px auto;
     justify-content: center;
   }
 
@@ -5831,7 +5840,6 @@ fieldset:disabled .btn {
 }
 
 
-
 @media (max-width:415px)
 {
   .container-detail
@@ -5851,7 +5859,7 @@ width: 100%;
  height: 200px;
   background-color: #fdfdfd;
   align-items: center;
-  margin: 0px auto 80px auto;
+  margin: 0px auto 100px auto;
   justify-content: center;
 }
 .detail-left h4 {
@@ -5888,10 +5896,188 @@ width: 100%;
   overflow: hidden;
 }
 .foto-produk img{
-  width: 95%;
+  width: 96%;
   border-radius: 15px;
 }
 }
+
+/*shop-detail*/
+.shop-section{
+  margin: 0px auto;
+  display: flex;
+  padding: 0px;
+}
+.master-shop{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.shop-detail
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 480px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.shop-right{
+    display: flex;
+    flex-direction: column;
+     width: 100%;
+     height: 400px;
+    background-color: #fdfdfd;
+    align-items: left;
+    margin: 100px auto 80px auto;
+    justify-content: center;
+  }
+
+  .shop-right h1 {
+    width: 90%;
+    margin-top: 20px;
+    text-align: left;
+  }
+  .shop-right p {
+    text-align: left;
+  }
+  .shop-right .harga{
+    margin-top: 10px; 
+    color: #F1A501;
+    font-size: 32px;
+  }
+  .shop-right .warna{
+    margin-top: 10px; 
+    margin-bottom: 0px;
+  }
+  .shop-right .stock{
+    font-weight: bold; 
+    margin-bottom: 40px;
+  }
+.shop-left{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+ width: 100%;
+ height: 500px;
+ align-items: center;
+ justify-content: center;
+  margin: auto;
+}
+.foto-produk{
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: #fdfdfd;
+  border-radius: 20px;
+  border: 0px solid;
+  box-shadow: 0px 0px 40px 10px #12121230;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.foto-produk img{
+  width: 95%;
+  border-radius: 15px;
+}
+
+
+@media (max-width:415px)
+{
+  .shop-section{
+    margin: 0px auto;
+    margin-top: 20px;
+    display: flex;
+    padding: 0px;
+  }
+  .master-shop{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 0px;
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+  }
+  .shop-detail
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+}
+.shop-right{
+  display: flex;
+  flex-direction: column;
+width: 100%;
+ height: 200px;
+  background-color: #fdfdfd;
+  align-items: center;
+  margin: 130px auto 100px auto;
+  justify-content: center;
+}
+.shop-right h1 {
+  width: 90%;
+  margin-top: 20px;
+  text-align: center;
+}
+.shop-right p {
+  text-align: center;
+}
+.shop-right .harga{
+  margin-top: 10px; 
+  color: #F1A501;
+  font-size: 32px;
+}
+.shop-right .warna{
+  margin-top: 10px; 
+  margin-bottom: 0px;
+}
+.shop-right .stock{
+  font-weight: bold; 
+  margin-bottom: 40px;
+}
+.shop-right .offer{
+  width: 80%;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+.shop-left{
+  display: flex;
+  background-color: #ffffff;
+ width: 100%;
+ height: 330px;
+ align-items: center;
+ justify-content: center;
+  margin: 20px auto 0px auto;
+}
+.foto-produk{
+  display: flex;
+  width: 330px;
+  height: 330px;
+  background-color: #fdfdfd;
+  border-radius: 20px;
+  border: 0px solid;
+  box-shadow: 0px 0px 40px 10px #12121230;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.foto-produk img{
+  width: 96%;
+  border-radius: 15px;
+}
+}
+
+
+/*end-shop-detail*/
 .progress {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9694,6 +9880,20 @@ width: 100%;
 
 .fs-0 {
   font-size: 1rem !important;
+}
+
+.fs-kecil{
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 20px;
+  display: none;
+}
+@media (max-width:415px)
+{
+.fs-kecil{
+  font-size: 14px;
+  font-weight: 100;
+}
 }
 
 .fs-1 {
