@@ -5727,14 +5727,7 @@ fieldset:disabled .btn {
 }
 
 /*pb-2*/
-@keyframes slide {
-  from {
-      transform: translateX(0);
-  }
-  to { 
-      transform: translateX(-100%);
-  }
-}
+
 
 .bb-2{
   overflow: hidden;
@@ -5760,8 +5753,8 @@ fieldset:disabled .btn {
 .logos-slide img
 {
   height: 380px;
-
 }
+
 @media (max-width:415px)
 {
   .bb-2{
@@ -5787,7 +5780,7 @@ fieldset:disabled .btn {
   justify-content: center;
   align-items:center;
   animation: 35s slide infinite linear;
-  width: 170%;
+  width: 100%;
 }
 
 }
