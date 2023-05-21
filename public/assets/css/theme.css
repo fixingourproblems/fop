@@ -5725,6 +5725,72 @@ fieldset:disabled .btn {
     background-position-x: 1rem;
   }
 }
+
+/*pb-2*/
+@keyframes slide {
+  from {
+      transform: translateX(0);
+  }
+  to { 
+      transform: translateX(-100%);
+  }
+}
+
+.bb-2{
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  margin-top: -20px;
+  margin-left: 100px;
+  border-radius: 15px;
+  height: 380px;
+  width: 380px;
+}
+.bb-2:hover .logos-slide{ 
+  animation-play-state: paused;
+}
+
+.logos-slide
+{ 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  animation: 35s slide infinite linear;
+}
+.logos-slide img
+{
+  height: 380px;
+
+}
+@media (max-width:415px)
+{
+  .bb-2{
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 15px;
+    height: 320px;
+    width: 320px;
+  }
+  .bb-2:hover .logos-slide{ 
+    animation-play-state: paused;
+  }
+.logos-slide img
+{
+  height: 320px;
+}
+.logos-slide
+{ 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  animation: 35s slide infinite linear;
+  width: 170%;
+}
+
+}
 /*transaksi*/
 .transaksi{
   width: 100%;
@@ -5750,7 +5816,7 @@ fieldset:disabled .btn {
 }
 @media (max-width:415px){
 .purpose p{
-  width: 330px;
+  width: 340px;
   margin: auto;
 }
 }
@@ -5825,6 +5891,18 @@ fieldset:disabled .btn {
  align-items: center;
  justify-content: center;
   margin: auto;
+}
+.vid1{
+  width: 380px;
+  height: 380px;
+  border-radius: 15px;
+}
+@media (max-width:415px){
+  .vid1{
+    width: 320px;
+    height: 320px;
+    border-radius: 15px;
+  }
 }
 .foto-produk{
   display: flex;
