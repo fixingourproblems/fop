@@ -5779,7 +5779,6 @@ fieldset:disabled .btn {
   display: flex;
   justify-content: center;
   align-items:center;
-  animation: 35s slide infinite linear;
   width: 100%;
 }
 
