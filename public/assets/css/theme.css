@@ -5785,10 +5785,11 @@ fieldset:disabled .btn {
 .detail-left{
 width: 100%;
  height: 500px;
-  background-color: #55abff;
+  background-color: #fdfdfd;
 }
 .detail-right{
   display: flex;
+  flex-direction: column;
   background-color: #ffffff;
  width: 100%;
  height: 500px;
@@ -5801,9 +5802,9 @@ width: 100%;
   width: 400px;
   height: 400px;
   background-color: #fdfdfd;
-  border-radius: 30px;
+  border-radius: 20px;
   border: 0px solid;
-  box-shadow: 0px 0px 40px 10px #12121260;
+  box-shadow: 0px 0px 40px 10px #12121230;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -5813,6 +5814,68 @@ width: 100%;
   border-radius: 15px;
 }
 
+
+
+@media (max-width:415px)
+{
+  .container-detail
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+}
+.detail-left{
+  display: flex;
+  flex-direction: column;
+width: 100%;
+ height: 200px;
+  background-color: #fdfdfd;
+  align-items: center;
+  margin: 0px auto 80px auto;
+  justify-content: center;
+}
+.detail-left h4 {
+  width: 90%;
+  text-align: center;
+  display: flex;
+}
+.detail-left p {
+  width: 80%;
+  text-align: center;
+  display: flex;
+}
+
+
+.detail-right{
+  display: flex;
+  background-color: #ffffff;
+ width: 100%;
+ height: 330px;
+ align-items: center;
+ justify-content: center;
+  margin: 20px auto 0px auto;
+}
+.foto-produk{
+  display: flex;
+  width: 330px;
+  height: 330px;
+  background-color: #fdfdfd;
+  border-radius: 20px;
+  border: 0px solid;
+  box-shadow: 0px 0px 40px 10px #12121230;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.foto-produk img{
+  width: 95%;
+  border-radius: 15px;
+}
+}
 .progress {
   display: -webkit-box;
   display: -ms-flexbox;
