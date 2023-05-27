@@ -9706,18 +9706,34 @@ width: 100%;
 
 .ppt{
   font-size: 18px;
+  width: 400px;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  margin: auto;
+  margin-left: 0px;
 }
 @media (max-width:415px)
 {
 .ppt{
   font-size: 14px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 }
 @media (min-width:2000px)
 {
 .ppt{
-  width: 400px;
+  width: 395px;
   font-size: 14px;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  margin: auto;
+  margin-left: 0px;
 }
 }
 
