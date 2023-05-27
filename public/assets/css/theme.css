@@ -9704,6 +9704,25 @@ width: 100%;
   padding-bottom: 3rem !important;
 }
 
+.ppt{
+  font-size: 18px;
+}
+@media (max-width:415px)
+{
+.ppt{
+  font-size: 14px;
+}
+}
+@media (min-width:2000px)
+{
+.ppt{
+  width: 400px;
+  font-size: 14px;
+}
+}
+
+
+
 .py-7 {
   padding-top: 4rem !important;
   padding-bottom: 4rem !important;
@@ -19954,11 +19973,16 @@ iframe {
   .hero-title {
     font-size: 2.62363rem;
   }
-}
 
+}
 @media (min-width: 1400px) {
   .hero-title {
-    font-size: 3.30158rem;
+    font-size: 2.80158rem;
+  }
+  @media (min-width: 2000px) {
+    .hero-title {
+      font-size: 2.80158rem;
+    }
   }
 }
 
